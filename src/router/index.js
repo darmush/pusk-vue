@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/jobs',
@@ -24,12 +23,13 @@ const router = createRouter({
     if (to.hash) {
       return {
         el: to.hash,
-        offset: { top: 0, left: 0 }
+        left: '0%',
+        top: 80,
       }
     } else if (savedPosition) {
         return savedPosition;
     }
-    return { top: 0, left: 0};
+    return { top: 0, left: 0 };
   },
 })
 

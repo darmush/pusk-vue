@@ -1,6 +1,5 @@
 <template>
   <HeaderComponent />
-  <!-- max-w-[1296px] -->
   <div class="pt-[80px]">
     <RouterView />
   </div>
