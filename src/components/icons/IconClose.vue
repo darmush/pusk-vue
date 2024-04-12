@@ -1,0 +1,6 @@
+<template>
+    <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.91748" y="24.0416" width="34" height="3" transform="rotate(-45 0.91748 24.0416)" fill="white"/>
+        <rect x="3.03955" y="0.418518" width="34" height="3" transform="rotate(45 3.03955 0.418518)" fill="white"/>
+    </svg>
+</template>
